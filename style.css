@@ -1,0 +1,48 @@
+body {
+    background-attachment: fixed;
+    background: linear-gradient(rgb(255, 222, 227), rgb(255, 170, 184))
+}
+.box {
+    width: fit-content;      
+    max-width: 80%;           
+    margin: 20px auto;        
+    text-align: center;      
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: hsl(350, 90%, 80%);
+    background-color: rgb(255, 193, 203);
+    color: rgb(179, 112, 112);
+    padding: 10px 20px;
+    
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
+}
+.box:hover {
+    transform: scale(1.07) translateY(-4px);
+    box-shadow: 
+        0 0 12px rgba(255, 150, 187, 0.8),
+        0 0 25px rgba(255, 103, 148, 0.6);
+    background-color: rgb(255, 205, 215);
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+
+    border: solid 3px hsl(350, 90%, 80%);
+    border-radius: 20px;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        filter 0.35s ease;
+}
+img:hover {
+   transform: scale(1.07) translateY(-4px);
+    box-shadow:
+        0 0 12px rgba(255, 150, 187, 0.8),
+        0 0 25px rgba(255, 103, 148, 0.6);
+    filter: brightness(1.05);
+}
